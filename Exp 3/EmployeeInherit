@@ -1,0 +1,52 @@
+public class EmployeeInherit{
+    Employee(){
+        System.out.println("Base class");
+    }   
+};
+class manager extends Employee{
+    String nm="raj";
+    String add="solapur";
+    int sal=12000;
+    String job="manager";
+
+    void per(){
+        System.out.println("Name is"+nm+"Address is"+add+"salary is"+sal+"Job is"+job);
+
+    }
+
+};
+
+class developer extends Employee{
+    String nm="sam";
+    String add="sangola";
+    int sal=120000;
+    String job="developer";
+
+    void per(){
+        System.out.println("Name is"+nm+"Address is"+add+"salary is"+sal+"Job is"+job);
+
+    }
+}
+class programmer extends Employee{
+    String nm="ani";
+    String add="kolhapur";
+    int sal=12345;
+    String job="programmer";
+    void per(){
+        System.out.println("Name is"+nm+"Address is"+add+"salary is"+sal+"Job is"+job);
+
+    }
+
+    public static void main(String[] args){
+        developer d=new developer();
+        manager m=new manager();
+        programmer p=new programmer();
+
+        d.per();
+        m.per();
+        p.per();
+
+    }
+
+
+}
